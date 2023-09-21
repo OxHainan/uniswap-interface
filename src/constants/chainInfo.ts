@@ -10,6 +10,7 @@ import baseSquareLogo from 'assets/svg/base_square_logo.svg'
 import bnbSquareLogoUrl from 'assets/svg/bnb_square_logo.svg'
 import bnbLogo from 'assets/svg/bnb-logo.svg'
 import celoLogo from 'assets/svg/celo_logo.svg'
+import tenetlogo from 'assets/svg/tenet_logo.svg'
 import celoSquareLogoUrl from 'assets/svg/celo_square_logo.svg'
 import optimismSquareLogoUrl from 'assets/svg/optimism_square_logo.svg'
 import optimismLogoUrl from 'assets/svg/optimistic_ethereum.svg'
@@ -267,7 +268,7 @@ const CHAIN_INFO: ChainInfoMap = {
     explorer: 'https://alfajores-blockscout.celo-testnet.org/',
     infoLink: 'https://info.uniswap.org/#/celo/',
     label: 'Tenet',
-    logoUrl: celoLogo,
+    logoUrl: tenetlogo,
     nativeCurrency: { name: 'TNT', symbol: 'TNT', decimals: 18 },
     defaultListUrl: CELO_LIST,
   },

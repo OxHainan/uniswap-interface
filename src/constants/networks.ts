@@ -83,6 +83,7 @@ export const FALLBACK_URLS = {
   [ChainId.CELO]: [
     // "Safe" URLs
     `https://forno.celo.org`,
+ 
   ],
   [ChainId.CELO_ALFAJORES]: [
     // "Safe" URLs
@@ -117,7 +118,8 @@ export const FALLBACK_URLS = {
   ],
   [ChainId.TENET]: [
     // "Safe" URLs
-    `https://forno.celo.org`,
+    // `https://forno.celo.org`,
+    `http://127.0.0.1:9933`,
   ],
 }
 

@@ -101,7 +101,7 @@ export default function SwapDetailsDropdown({ trade, syncing, loading, allowedSl
   const theme = useTheme()
   const [showDetails, setShowDetails] = useState(false)
   const trace = useTrace()
-
+  
   return (
     <Wrapper>
       <TraceEvent

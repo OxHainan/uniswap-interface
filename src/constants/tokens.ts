@@ -75,7 +75,7 @@ export const PORTAL_USDC_CELO = new Token(
 )
 export const USDC_TENET = new Token(
   ChainId.TENET,
-  '0xD3F053dd508B4B328A1690C34F36F819CC917d9f',
+  '0xaa29953B744a8CEE8C790Daa8065a80cEfe0bCEc',
   6,
   'USDCet',
   'USDC (Portal from Ethereum)'
@@ -341,7 +341,7 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } =
     'WAVAX',
     'Wrapped AVAX'
   ),
-  [ChainId.TENET]: new Token(ChainId.TENET, '0x2248B3B667Dc3e665619b41197A0BA61116D4511', 18, 'TENET', 'Wrapped TENET'),
+  [ChainId.TENET]: new Token(ChainId.TENET, '0x0d27C1f0D81CBEC659201581C23ea334a18892e4', 18, 'WETH', 'Wrapped ETH'),
 }
 
 export function isCelo(chainId: number): chainId is ChainId.CELO | ChainId.CELO_ALFAJORES {

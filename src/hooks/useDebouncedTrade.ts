@@ -75,6 +75,7 @@ export function useDebouncedTrade(
     () => [amountSpecified, otherCurrency],
     [amountSpecified, otherCurrency]
   )
+  
   const debouncedSwapQuoteFlagEnabled = useDebounceSwapQuoteFlag() === DebounceSwapQuoteVariant.Enabled
   const isDebouncing =
     useDebounce(inputs, debouncedSwapQuoteFlagEnabled ? DEBOUNCE_TIME_INCREASED : DEBOUNCE_TIME) !== inputs

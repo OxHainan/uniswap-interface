@@ -98,7 +98,7 @@ export function chainIdToBackendName(chainId: number | undefined) {
     : CHAIN_ID_TO_BACKEND_NAME[ChainId.MAINNET]
 }
 
-const GQL_CHAINS = [ChainId.MAINNET, ChainId.OPTIMISM, ChainId.POLYGON, ChainId.ARBITRUM_ONE, ChainId.CELO] as const
+const GQL_CHAINS = [ChainId.MAINNET, ChainId.OPTIMISM, ChainId.POLYGON, ChainId.ARBITRUM_ONE, ChainId.CELO, ChainId.TENET] as const
 type GqlChainsType = (typeof GQL_CHAINS)[number]
 
 export function isGqlSupportedChain(chainId: number | undefined): chainId is GqlChainsType {

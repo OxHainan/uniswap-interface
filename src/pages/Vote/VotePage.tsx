@@ -259,7 +259,6 @@ export default function VotePage() {
   const linkIfAddress = (content: string) => {
     if (isAddress(content) && chainId) {
       const commonName = COMMON_CONTRACT_NAMES[chainId]?.[content] ?? content
-      console.log("commonName", commonName);
       return (
         <ExternalLink href={getExplorerLink(chainId, content, ExplorerDataType.ADDRESS)}>{commonName}</ExternalLink>
       )

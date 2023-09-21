@@ -20,7 +20,6 @@ const CHAIN_DATA_ABI = [
  */
 export default function useGasPrice(): JSBI | undefined {
   const { address } = useENSAddress('fast-gas-gwei.data.eth')
-  console.log("gas used", address)
   const contract = useContract(address ?? undefined, CHAIN_DATA_ABI, false)
 
   const resultStr = useSingleCallResult(contract, 'latestAnswer').result?.[0]?.toString()

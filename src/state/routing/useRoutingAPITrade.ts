@@ -92,7 +92,19 @@ export function useRoutingAPITrade<TTradeType extends TradeType>(
     outputTax,
   })
 
+  const queryArgs1 = useRoutingAPIArguments({
+    account,
+    tokenIn: currencyIn,
+    tokenOut: currencyOut,
+    amount: amountSpecified,
+    tradeType,
+    routerPreference,
+    inputTax,
+    outputTax,
+  })
+
   const { isError, data: tradeResult, error, currentData } = useGetQuoteQueryState(queryArgs)
+
   useGetQuoteQuery(skipFetch ? skipToken : queryArgs, {
     // Price-fetching is informational and costly, so it's done less frequently.
     pollingInterval: routerPreference === INTERNAL_ROUTER_PREFERENCE_PRICE ? ms(`1m`) : AVERAGE_L1_BLOCK_TIME,
