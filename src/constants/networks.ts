@@ -119,7 +119,7 @@ export const FALLBACK_URLS = {
   [ChainId.TENET]: [
     // "Safe" URLs
     // `https://forno.celo.org`,
-    `http://127.0.0.1:9933`,
+    `http://127.0.0.1:9944`,
   ],
 }
 
